@@ -350,7 +350,7 @@ static CGFloat const itemUpGap = 200;
     [[StateMaintenanceManager instance] changeMyOnlineState:USER_STATUS_ONLINE];
     NSString* currentUserID = [DDClientState shareInstance].userID;
     UserEntity* user = [[DDUserlistModule shareInstance] getUserById:currentUserID];
-    NSString* avatar = user.avatar;
+    NSString* avatar =@"http://ww3.sinaimg.cn/mw690/78f46d55gw1ebdp68xiqsj20dc0hs409.jpg";//for test
     NSURL* avatarURL = [NSURL URLWithString:avatar];
     [_avatarImageView loadImageWithURL:avatarURL setplaceholderImage:@"man_placeholder"];
     

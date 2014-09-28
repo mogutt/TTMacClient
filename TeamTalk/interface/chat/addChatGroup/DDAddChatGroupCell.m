@@ -29,12 +29,12 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
 	[super drawRect:dirtyRect];
-	
     // Drawing code here.
 }
 
 - (void)setItem:(id)item
 {
+   
     [self.avatar setWantsLayer:YES];
     [self.avatar.layer setCornerRadius:3];
     [self.avatar.layer setMasksToBounds:YES];

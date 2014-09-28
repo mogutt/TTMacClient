@@ -66,7 +66,7 @@
     [self.contactListTableView setDelegate:self];
     [self.listViewTitleTextField setEditable:NO];
     [self.listViewTitleTextField setBackgroundColor:[NSColor clearColor]];
-    [self.contactListTableView setBackGroundImage:[NSImage imageNamed:@"panel_bg_theme_gray"]];
+//    [self.contactListTableView setBackGroundImage:[NSImage imageNamed:@"panel_bg_theme_gray"]];
 
     
 }
@@ -209,8 +209,6 @@
         NSArray* groupUsers = [self.module showGroupMembers];
         UserEntity* selectedUser = [groupUsers objectAtIndex:clickedRow];
         NSString *selectUserId = selectedUser.userId;
-        
-        
         DDUserlistModule* userListModel = [DDUserlistModule shareInstance];
         UserEntity* showUser = [userListModel getUserById:selectUserId];
         [[DDUserInfoManager instance] showUser:showUser forContext:self];

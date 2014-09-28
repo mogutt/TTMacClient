@@ -39,6 +39,7 @@
 }
 
 -(void)awakeFromNib{
+    [self.view.layer setBackgroundColor:[NSColor colorWithCalibratedRed:251.0/255.0 green:251.0/255.0 blue:251.0/255.0 alpha:1].CGColor];
     _receiveTimes = 0;
     [self.line setBackgroundColor:[NSColor colorWithCalibratedRed:205.0/255.0 green:205.0/255.0 blue:205.0/255.0 alpha:1]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(p_receiveInputtingMessage:) name:notificationReceiveP2PInputingMessage object:nil];
@@ -90,9 +91,7 @@
     [panel beginSheetModalForWindow:[self.view window] completionHandler:^(NSInteger result) {
         if (result == NSFileHandlingPanelOKButton) {
             NSLog(@" >>>> %lu+ %@",result,[[panel URL] path]);
-            
         }
-        
         panel=nil;
     }];
     

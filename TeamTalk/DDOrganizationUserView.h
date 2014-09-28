@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface DDOrganizationUserView : NSView
+#import "DDAddChatGroupCell.h"
+@interface DDOrganizationUserView : DDAddChatGroupCell
 
 @end

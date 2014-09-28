@@ -11,10 +11,7 @@
 @implementation DDAppBackgroundColorView
 - (void)drawRect:(NSRect)dirtyRect
 {
-    NSColor* backgroundColor = [NSColor colorWithDeviceRed:239.0 / 255.0
-                                                     green:239.0 / 255.0
-                                                      blue:239.0 / 255.0
-                                                     alpha:1];
+    NSColor* backgroundColor = [NSColor whiteColor];
     [backgroundColor set];
     [[NSBezierPath bezierPath] fill];
 }

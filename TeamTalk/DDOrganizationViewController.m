@@ -9,7 +9,9 @@
 #import "DDOrganizationViewController.h"
 #import "DDOriginzationModule.h"
 #import "UserEntity.h"
+#import "DDOrganizationUserView.h"
 #import "DDDepartmentModule.h"
+#import "DDAddGroupMemberDepartmentCell.h"
 @implementation DDOrganizationViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -17,6 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
+       
     }
     return self;
 }
@@ -24,6 +27,8 @@
 - (void)awakeFromNib
 {
     [self.outlineView setHeaderView:nil];
+    [self.outlineView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleRegular];
+    
 }
 
 - (DDOriginzationModule*)module
@@ -92,29 +97,38 @@
         return user.nick;
     }
     return nil;
+    
 }
 
-//- (NSView *)outlineView:(NSOutlineView *)outlineView viewForTableColumn:(NSTableColumn *)tableColumn item:(id)item
-//{
-//    if ([item isKindOfClass:NSClassFromString(@"UserEntity")])
-//    {
-//        NSString* identifier = [tableColumn identifier];
-//        NSString* cellIdentifier = @"DDAddChatGroupCellIdentifier";
-//        if ([identifier isEqualToString:@"NameColumn"])
-//        {
-//            return nil;
-//        }
-//    }
-//    else if ([item isKindOfClass:NSClassFromString(@"DDAddChatGroup")])
-//    {
-//        //DDAddGroupMemberDepartmentCellIdentifier
-//        NSString* identifier = [tableColumn identifier];
-//        NSString* cellIdentifier = @"DDAddGroupMemberDepartmentCellIdentifier";
-//        if ([identifier isEqualToString:@"NameColumn"])
-//        {
-//            return nil;
-//        }
-//    }
-//    return nil;
-//}
+- (NSView *)outlineView:(NSOutlineView *)outlineView viewForTableColumn:(NSTableColumn *)tableColumn item:(id)item
+{
+    
+    if ([item isKindOfClass:NSClassFromString(@"UserEntity")])
+    {
+        NSString* identifier = [tableColumn identifier];
+        if ([identifier isEqualToString:@"NameColumn"])
+        {
+            NSString* cellIdentifier = @"DDAddChatGroupCellIdentifier";
+            DDOrganizationUserView* cell = (DDOrganizationUserView*)[outlineView makeViewWithIdentifier:cellIdentifier owner:self];
+            [cell setItem:item];
+            return cell;
+        }
+    }
+    else if ([item isKindOfClass:NSClassFromString(@"NSString")])
+    {
+        NSString* identifier = [tableColumn identifier];
+        if ([identifier isEqualToString:@"NameColumn"])
+        {
+            NSString* cellIdentifier = @"DDAddGroupMemberDepartmentCellIdentifier";
+            DDAddGroupMemberDepartmentCell* cell = (DDAddGroupMemberDepartmentCell*)[outlineView makeViewWithIdentifier:cellIdentifier owner:self];
+            DepartmentEntity* department = [[DDDepartmentModule shareInstance] getDepartmentForID:item];
+            [cell.name setStringValue:department.title];
+            
+            return cell;
+        }
+
+    }
+    return nil;
+}
+
 @end

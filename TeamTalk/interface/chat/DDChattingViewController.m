@@ -85,6 +85,7 @@ static EmotionViewController *emotionViewController = nil;
 }
 
 - (void)awakeFromNib{
+    [self.view.layer setBackgroundColor:[NSColor colorWithCalibratedRed:207.0/255.0 green:207.0/255.0 blue:207.0/255.0 alpha:1.0].CGColor];
     if(SESSIONTYPE_GROUP == [self.module.session type])
     {
         [[self bottomRightView] setHidden:NO];

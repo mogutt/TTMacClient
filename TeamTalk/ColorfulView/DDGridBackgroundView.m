@@ -22,9 +22,7 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
 	[super drawRect:dirtyRect];
-//    NSImage* image = [NSImage imageNamed:@"background"];
-//    NSColor* color = [NSColor colorWithPatternImage:image];
-    NSColor* color = [NSColor grayColor];
+    NSColor* color =  [NSColor colorWithCalibratedRed:207.0/255.0 green:207.0/255.0 blue:207.0/255.0 alpha:1.0];
     [color set];
     [NSBezierPath fillRect:dirtyRect];
     // Drawing code here.
