@@ -74,10 +74,7 @@ static NSInteger const getAllUsersTimeout = 5;
     {
         if (newUser.userUpdated == 0)
         {
-            if (![[_allUsers allKeys] containsObject:newUser.userId])
-            {
-                [_allUsers setObject:newUser forKey:newUser.userId];
-            }
+            [_allUsers setObject:newUser forKey:newUser.userId];
         }
         else
         {

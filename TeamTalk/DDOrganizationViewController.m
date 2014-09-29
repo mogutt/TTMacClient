@@ -77,28 +77,28 @@
     }
 }
 
-- (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item
-{
-    if ([item isKindOfClass:NSClassFromString(@"NSString")])
-    {
-        DepartmentEntity* department = [[DDDepartmentModule shareInstance] getDepartmentForID:item];
-        if (department)
-        {
-            return department.title;
-        }
-        else
-        {
-            return item;
-        }
-    }
-    else if ([item isKindOfClass:NSClassFromString(@"UserEntity")])
-    {
-        UserEntity* user = (UserEntity*)item;
-        return user.nick;
-    }
-    return nil;
-    
-}
+//- (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item
+//{
+//    if ([item isKindOfClass:NSClassFromString(@"NSString")])
+//    {
+//        DepartmentEntity* department = [[DDDepartmentModule shareInstance] getDepartmentForID:item];
+//        if (department)
+//        {
+//            return department.title;
+//        }
+//        else
+//        {
+//            return item;
+//        }
+//    }
+//    else if ([item isKindOfClass:NSClassFromString(@"UserEntity")])
+//    {
+//        UserEntity* user = (UserEntity*)item;
+//        return user.nick;
+//    }
+//    return nil;
+//    
+//}
 
 - (NSView *)outlineView:(NSOutlineView *)outlineView viewForTableColumn:(NSTableColumn *)tableColumn item:(id)item
 {
