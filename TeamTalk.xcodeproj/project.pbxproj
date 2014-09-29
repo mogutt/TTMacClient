@@ -225,6 +225,7 @@
 		C408E8D1191CDCDD005F5150 /* DDFileSendAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C408E8D0191CDCDD005F5150 /* DDFileSendAPI.m */; };
 		C408E8D4191CE13E005F5150 /* DDGetOfflineFileAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C408E8D3191CE13E005F5150 /* DDGetOfflineFileAPI.m */; };
 		C408E8DB191CE44E005F5150 /* DDOtherLinkFileServerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C408E8DA191CE44E005F5150 /* DDOtherLinkFileServerAPI.m */; };
+		C40D9DFA19D936A2004AF051 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C40D9DF919D936A2004AF051 /* icon.icns */; };
 		C40F951A1919C69A005CACBF /* DDAllUserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F95191919C69A005CACBF /* DDAllUserAPI.m */; };
 		C40F951D1919CBFE005CACBF /* DDUnreadMessageUserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F951C1919CBFE005CACBF /* DDUnreadMessageUserAPI.m */; };
 		C40F95201919CDBD005CACBF /* DDUsersUnreadMessageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C40F951F1919CDBD005CACBF /* DDUsersUnreadMessageAPI.m */; };
@@ -845,6 +846,7 @@
 		C408E8D3191CE13E005F5150 /* DDGetOfflineFileAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGetOfflineFileAPI.m; sourceTree = "<group>"; };
 		C408E8D9191CE44E005F5150 /* DDOtherLinkFileServerAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDOtherLinkFileServerAPI.h; sourceTree = "<group>"; };
 		C408E8DA191CE44E005F5150 /* DDOtherLinkFileServerAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOtherLinkFileServerAPI.m; sourceTree = "<group>"; };
+		C40D9DF919D936A2004AF051 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		C40F95181919C69A005CACBF /* DDAllUserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAllUserAPI.h; sourceTree = "<group>"; };
 		C40F95191919C69A005CACBF /* DDAllUserAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAllUserAPI.m; sourceTree = "<group>"; };
 		C40F951B1919CBFE005CACBF /* DDUnreadMessageUserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDUnreadMessageUserAPI.h; sourceTree = "<group>"; };
@@ -1506,7 +1508,7 @@
 			isa = PBXGroup;
 			children = (
 				573847381820CDA000443653 /* TeamTalk */,
-				573847561820CDA000443653 /* DuoduoTests */,
+				573847561820CDA000443653 /* TeamTalkTests */,
 				573847311820CDA000443653 /* Frameworks */,
 				573847301820CDA000443653 /* Products */,
 			);
@@ -1575,6 +1577,7 @@
 		573847391820CDA000443653 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C40D9DF919D936A2004AF051 /* icon.icns */,
 				5738473A1820CDA000443653 /* TeamTalk-Info.plist */,
 				5738473B1820CDA000443653 /* InfoPlist.strings */,
 				5700BF0B18A8A5AD0060092F /* dsa_pub.pem */,
@@ -1587,7 +1590,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		573847561820CDA000443653 /* DuoduoTests */ = {
+		573847561820CDA000443653 /* TeamTalkTests */ = {
 			isa = PBXGroup;
 			children = (
 				5738475C1820CDA000443653 /* DuoduoTests.m */,
@@ -2804,6 +2807,7 @@
 				C4A09C9B190FC7B000B39BF3 /* DDRecentContactsViewController.xib in Resources */,
 				572A87E718B74E9F003E3FC8 /* DDAddChatGroupWindowController.xib in Resources */,
 				C4D2EFF518B4B29A000F0B12 /* DDSearchResultCell.xib in Resources */,
+				C40D9DFA19D936A2004AF051 /* icon.icns in Resources */,
 				5738473D1820CDA000443653 /* InfoPlist.strings in Resources */,
 				57AF228C1820F31600758483 /* LoginSelect.xib in Resources */,
 				C43802D718C48650002555BB /* DDGroupDataWindow.xib in Resources */,
