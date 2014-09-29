@@ -79,7 +79,8 @@ static CGFloat const rowHeight = 36;
 #pragma mark TableView DataSource
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return [_resultList count];
+    NSInteger count = [_resultList count];
+    return count;
 }
 
 - (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row
