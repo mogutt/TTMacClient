@@ -26,7 +26,7 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="O8h-Ep-Sca">
-                        <rect key="frame" x="56" y="200" width="152" height="103"/>
+                        <rect key="frame" x="56" y="200" width="152" height="128"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="login_logo" id="IbC-Cv-2Y6"/>
                     </imageView>
@@ -97,7 +97,7 @@
         <image name="login_account" width="9" height="10"/>
         <image name="login_board" width="213" height="36"/>
         <image name="login_logining" width="20" height="20"/>
-        <image name="login_logo" width="152" height="103"/>
+        <image name="login_logo" width="152" height="128"/>
         <image name="login_password" width="13" height="8"/>
     </resources>
 </document>
