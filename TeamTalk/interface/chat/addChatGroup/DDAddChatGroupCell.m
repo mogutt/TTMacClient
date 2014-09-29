@@ -34,11 +34,6 @@
 
 - (void)setItem:(id)item
 {
-   
-    [self.avatar setWantsLayer:YES];
-    [self.avatar.layer setCornerRadius:3];
-    [self.avatar.layer setMasksToBounds:YES];
-
     if ([item isKindOfClass:NSClassFromString(@"UserEntity")])
     {
         [self.avatar setUser:item];

@@ -53,7 +53,7 @@
 
 #warning 可配置
 #define SERVER_IP                           @"122.225.68.125"//
-#define SERVER_PORT                         9008//登录服务器端口
+#define SERVER_PORT                         18008//登录服务器端口
 
 #define IMAGE_MARK_START                    @"&$#@~^@[{:"
 #define IMAGE_MARK_END                      @":}]&$~@#@"

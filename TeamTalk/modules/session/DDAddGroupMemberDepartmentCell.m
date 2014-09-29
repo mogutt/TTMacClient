@@ -25,8 +25,8 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
 	[super drawRect:dirtyRect];
-    self.imageView=nil;
-    [self setWantsLayer:YES];
+//    self.imageView=nil;
+//    [self setWantsLayer:YES];
 
     
     // Drawing code here.
