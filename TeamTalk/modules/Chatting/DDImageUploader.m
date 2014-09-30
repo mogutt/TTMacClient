@@ -30,7 +30,7 @@ static int max_try_upload_times = 5;
 
 - (void)uploadImage:(NSImage*)image success:(void(^)(NSString* imageURL))success failure:(void(^)(id error))failure
 {
-    NSURL *url = [NSURL URLWithString:@"http://122.225.68.125:8001/"];
+    NSURL *url = [NSURL URLWithString:@"http://122.225.68.125:8600/"];
     int width = image.size.width;
     int height = image.size.height;
     NSString* imageName = [NSString stringWithFormat:@"image.png_%dx%d.png",width,height];
@@ -48,7 +48,7 @@ static int max_try_upload_times = 5;
         int code = [response[@"error_code"] intValue];
         if (code == 0)
         {
-            NSString* imageURL = response[@"url"];
+            NSString* imageURL = response[@"path"];
             if (imageURL)
             {
                 NSString* realImageURL = [NSString stringWithFormat:@"%@%@%@",IMAGE_MARK_START,imageURL,IMAGE_MARK_END];

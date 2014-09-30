@@ -82,7 +82,7 @@
 //duoduo has finished lauching.
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [[DDApplicationUpdate instance] startAutoCheckUpdateAtOnce];
+//    [[DDApplicationUpdate instance] startAutoCheckUpdateAtOnce];
     //应用程序初始化相关
     [StateMaintenanceManager instance];
     [DDClientStateMaintenanceManager shareInstance];

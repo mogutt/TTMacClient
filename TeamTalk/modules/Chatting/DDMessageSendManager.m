@@ -134,7 +134,17 @@ static uint32_t seqNo = 0;
 
         DDSendMessageAPI* sendMessageAPI = [[DDSendMessageAPI alloc] init];
         uint32_t nowSeqNo = ++seqNo;
-        NSArray* object = @[userListModule.myUserId,session.orginId,string,[NSNumber numberWithInt:nowSeqNo],[NSNumber numberWithInt:session.type]];
+        uint8 type;
+        switch (session.type)
+        {
+            case SESSIONTYPE_SINGLE:
+                type = MSG_TYPE_SINGLE_TEXT;
+                break;
+            case SESSIONTYPE_GROUP:
+                type = MSG_TYPE_GROUP_TEXT;
+                break;
+        }
+        NSArray* object = @[userListModule.myUserId,session.orginId,string,[NSNumber numberWithInt:nowSeqNo],[NSNumber numberWithInt:type]];
         
         [sendMessageAPI requestWithObject:object Completion:^(id response, NSError *error) {
             if (!error)

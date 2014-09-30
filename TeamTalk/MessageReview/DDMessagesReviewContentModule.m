@@ -38,7 +38,11 @@
             range.location = startRange.location+startRange.length;
             range.length = endRange.location-startRange.length-startRange.location;
             NSString *url = [msgContent substringWithRange:range];
-            
+            if ([url rangeOfString:@"http://"].length == 0)
+            {
+                url = [NSString stringWithFormat:@"http://122.225.68.125:8600/%@",url];
+            }
+
             DDLog(@"图片url:%@",url);
             [msgContent deleteCharactersInRange:NSMakeRange(startRange.location,(startRange.length+range.length+endRange.length) )];
             
