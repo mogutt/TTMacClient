@@ -65,7 +65,6 @@
 		571CFFA11890B41C0030E02C /* FMSearchTokenFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CFFA01890B41C0030E02C /* FMSearchTokenFieldCell.m */; };
 		571CFFA41890BD6A0030E02C /* FMSearchTokenAttachmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CFFA31890BD6A0030E02C /* FMSearchTokenAttachmentCell.m */; };
 		571CFFA718920A010030E02C /* DDSearchFieldEditorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CFFA618920A010030E02C /* DDSearchFieldEditorDelegate.m */; };
-		571FD9B01868072700F7476B /* RTXBackgroudColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571FD9AF1868072700F7476B /* RTXBackgroudColorView.m */; };
 		571FD9B3186809C400F7476B /* RTXImageSpreadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571FD9B2186809C400F7476B /* RTXImageSpreadView.m */; };
 		571FD9BA18681A5F00F7476B /* FMSearchTokenField.m in Sources */ = {isa = PBXBuildFile; fileRef = 571FD9B918681A5F00F7476B /* FMSearchTokenField.m */; };
 		57285D4F18AB814400E90EC2 /* DDPreferenceWinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57285D4D18AB814400E90EC2 /* DDPreferenceWinController.m */; };
@@ -127,7 +126,6 @@
 		57AF228C1820F31600758483 /* LoginSelect.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AF228B1820F31600758483 /* LoginSelect.xib */; };
 		57AF2295182108E300758483 /* DDDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF2294182108E300758483 /* DDDictionaryAdditions.m */; };
 		57AF229818210D8100758483 /* DDSharedWriterQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF229718210D8100758483 /* DDSharedWriterQueue.m */; };
-		57AF72C0186863BE00C06257 /* RTXTabItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF72BF186863BE00C06257 /* RTXTabItemView.m */; };
 		57B3902018349DA6007CD3E0 /* AIBezierPathAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B3901F18349DA6007CD3E0 /* AIBezierPathAdditions.m */; };
 		57B390261834A970007CD3E0 /* DDImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B390251834A970007CD3E0 /* DDImageCollectionView.m */; };
 		57B3ACE818C0ACDD00F50C8F /* DDChattingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B3ACE718C0ACDD00F50C8F /* DDChattingViewController.m */; };
@@ -534,8 +532,6 @@
 		571CFFA31890BD6A0030E02C /* FMSearchTokenAttachmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMSearchTokenAttachmentCell.m; path = interface/mainWindow/searchField/FMSearchTokenAttachmentCell.m; sourceTree = "<group>"; };
 		571CFFA518920A010030E02C /* DDSearchFieldEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDSearchFieldEditorDelegate.h; path = interface/mainWindow/searchField/DDSearchFieldEditorDelegate.h; sourceTree = "<group>"; };
 		571CFFA618920A010030E02C /* DDSearchFieldEditorDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDSearchFieldEditorDelegate.m; path = interface/mainWindow/searchField/DDSearchFieldEditorDelegate.m; sourceTree = "<group>"; };
-		571FD9AE1868072700F7476B /* RTXBackgroudColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTXBackgroudColorView.h; path = interface/mainWindow/RTXBackgroudColorView.h; sourceTree = "<group>"; };
-		571FD9AF1868072700F7476B /* RTXBackgroudColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTXBackgroudColorView.m; path = interface/mainWindow/RTXBackgroudColorView.m; sourceTree = "<group>"; };
 		571FD9B1186809C400F7476B /* RTXImageSpreadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTXImageSpreadView.h; path = interface/mainWindow/RTXImageSpreadView.h; sourceTree = "<group>"; };
 		571FD9B2186809C400F7476B /* RTXImageSpreadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTXImageSpreadView.m; path = interface/mainWindow/RTXImageSpreadView.m; sourceTree = "<group>"; };
 		571FD9B818681A5F00F7476B /* FMSearchTokenField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMSearchTokenField.h; path = interface/mainWindow/FMSearchTokenField.h; sourceTree = "<group>"; };
@@ -645,8 +641,6 @@
 		57AF2294182108E300758483 /* DDDictionaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDDictionaryAdditions.m; path = utilities/additions/DDDictionaryAdditions.m; sourceTree = "<group>"; };
 		57AF229618210D8100758483 /* DDSharedWriterQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDSharedWriterQueue.h; path = utilities/additions/DDSharedWriterQueue.h; sourceTree = "<group>"; };
 		57AF229718210D8100758483 /* DDSharedWriterQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDSharedWriterQueue.m; path = utilities/additions/DDSharedWriterQueue.m; sourceTree = "<group>"; };
-		57AF72BE186863BE00C06257 /* RTXTabItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTXTabItemView.h; path = interface/mainWindow/RTXTabItemView.h; sourceTree = "<group>"; };
-		57AF72BF186863BE00C06257 /* RTXTabItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTXTabItemView.m; path = interface/mainWindow/RTXTabItemView.m; sourceTree = "<group>"; };
 		57B3901E18349DA6007CD3E0 /* AIBezierPathAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIBezierPathAdditions.h; path = utilities/additions/AIBezierPathAdditions.h; sourceTree = "<group>"; };
 		57B3901F18349DA6007CD3E0 /* AIBezierPathAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIBezierPathAdditions.m; path = utilities/additions/AIBezierPathAdditions.m; sourceTree = "<group>"; };
 		57B390241834A970007CD3E0 /* DDImageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDImageCollectionView.h; path = utilities/funNewControls/gridIphotoStyleView/DDImageCollectionView.h; sourceTree = "<group>"; };
@@ -1724,12 +1718,8 @@
 				5709F95D18486E320096D176 /* DDImageView.m */,
 				57D5D163184C76D900852738 /* DDSplitView.h */,
 				57D5D164184C76D900852738 /* DDSplitView.m */,
-				571FD9AE1868072700F7476B /* RTXBackgroudColorView.h */,
-				571FD9AF1868072700F7476B /* RTXBackgroudColorView.m */,
 				571FD9B1186809C400F7476B /* RTXImageSpreadView.h */,
 				571FD9B2186809C400F7476B /* RTXImageSpreadView.m */,
-				57AF72BE186863BE00C06257 /* RTXTabItemView.h */,
-				57AF72BF186863BE00C06257 /* RTXTabItemView.m */,
 			);
 			name = mainWindow;
 			sourceTree = "<group>";
@@ -2864,7 +2854,6 @@
 				C40F9541191A4E4D005CACBF /* DDGroupsUnreadMessageAPI.m in Sources */,
 				C427BFA919A439E100A010AA /* GCDAsyncSocket.m in Sources */,
 				572A87E218B74E7B003E3FC8 /* DDClickCell.m in Sources */,
-				57AF72C0186863BE00C06257 /* RTXTabItemView.m in Sources */,
 				6D1CC7AC18A62FF0002CAE5F /* L4Properties.m in Sources */,
 				57124E56187E331A006D2DCA /* ImageAndTextCell.m in Sources */,
 				57EFFB4718583C8D006D8DE1 /* AFURLConnectionOperation.m in Sources */,
@@ -3095,7 +3084,6 @@
 				6D1CC7A218A62FF0002CAE5F /* L4Level.m in Sources */,
 				57AB4F111821EAD500603621 /* NSEvent+DDEventAdditions.m in Sources */,
 				57B390261834A970007CD3E0 /* DDImageCollectionView.m in Sources */,
-				571FD9B01868072700F7476B /* RTXBackgroudColorView.m in Sources */,
 				573847881820CE9900443653 /* DataInputStream.m in Sources */,
 				18C769FD188E44720066AA8C /* Reachability.m in Sources */,
 				C4A09CC61910EA2400B39BF3 /* DDAppBackgroundColorView.m in Sources */,
